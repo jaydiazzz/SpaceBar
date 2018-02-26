@@ -1,0 +1,10 @@
+<svg width="100%" height="555" viewBox="0 0 1024 555" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Canvas" transform="translate(394 -2598)">
+    <g id="Vector">
+      <use xlink:href="#path0_fill" transform="translate(-394 2598.93)" fill="#518702" fill-opacity="0.5"/>
+    </g>
+  </g>
+  <defs>
+    <path id="path0_fill" d="M 248 61.5669C 153.972 119.608 94 137.067 0 109.755L 0 553.567L 1024 553.567L 1024 109.755C 845.913 93.3076 745.557 79.2421 563.5 25.0671C 390.28 -27.6204 329 11.5671 248 61.5669Z"/>
+  </defs>
+</svg>

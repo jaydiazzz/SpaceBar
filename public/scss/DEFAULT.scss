@@ -1,0 +1,138 @@
+@import 'variables';
+
+*{
+  transition: .3s ease-in-out;
+  box-sizing: border-box;
+}
+.button {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: $darkgreen;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: 600;
+}
+.raining{
+  background-image:url("/static/img/prettypatty.png");
+  background-size:50px 50px;
+  animation:burgers infinite 3s;
+  animation-timing-function:linear;
+  z-index:10000000;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100%;
+  color:white;
+  font-size:64px;
+  text-align:center;
+  font-weight: 700;
+  line-height: 100vh;
+  text-shadow: 2px 2px 2px black;
+}
+@keyframes burgers {
+  0%{
+    background-position:top;
+  }
+  100%{
+    background-position:bottom;
+  }
+}
+body{
+  margin:0;
+  font-family:'Josefin Sans', sans-serif;
+  * {
+    display: block;
+  }
+  a{
+    text-decoration:none;
+    color:inherit;
+  }
+  nav{
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    flex-flow:row wrap;
+    #logo_container{
+      flex: 1 0 0;
+      align-self: normal;
+    }
+    #links{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex: 1 0 0;
+      align-self: normal;
+      a{
+        color:white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        position:relative;
+        z-index:2;
+      }
+    }
+    #social{
+      display: flex;
+      align-items: center;
+      flex: 1 0 0;
+      align-self:normal;
+      justify-content: space-evenly;
+      a{
+        padding: 10px;
+        color:white;
+        position:relative;
+        margin: 0 3px;
+      }
+    }
+  }
+  footer{
+    background: url(/static/img/footer.svg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    padding-top:20%;
+    padding-bottom:5%;
+    background-position: top;
+    position:relative;
+    background-color:$palegreen;
+
+    .logo{
+      float:left;
+    }
+    .references{
+      ul{
+        display:flex;
+        align-items: left;
+        list-style-type:none;
+        flex-flow: column;
+        float:left;
+        color:white;
+        margin-left:5%;
+        li{
+          padding-bottom:7%;
+          text-align:left;
+        }
+      }
+    }
+    .social{
+      width:100%;
+      flex-flow:column;
+      align-items: center;
+      justify-content: center;
+      display:flex;
+      color:white;
+      .thelinks{
+        flex-flow:row wrap;
+        display:flex;
+        justify-content: center;
+        a{
+          margin:0 30px;
+        }
+      }
+    }
+  }
+  script{
+    display:none;
+  }
+}

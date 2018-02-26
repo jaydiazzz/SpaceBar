@@ -1,0 +1,22 @@
+{
+  "name": "sample-node-project",
+  "version": "1.0.0",
+  "description": "just a simple node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch public/scss -o public/css"
+  },
+  "author": "Jay",
+  "license": "MIT",
+  "dependencies": {
+    "apprequire": "^1.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "pug": "^2.0.0-rc.4",
+    "sass": "^1.0.0-beta.4",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {}
+}
