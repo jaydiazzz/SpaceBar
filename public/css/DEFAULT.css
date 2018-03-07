@@ -51,6 +51,11 @@ body {
     body nav #logo_container {
       flex: 1 0 0;
       align-self: normal; }
+      body nav #logo_container img {
+        width: 50%;
+        height: 140px;
+        margin-left: 10%;
+        position: relative; }
     body nav #links {
       display: flex;
       align-items: center;

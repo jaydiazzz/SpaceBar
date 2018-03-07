@@ -1,45 +1,65 @@
+@import 'variables';
+$font:24px;
 body{
   background:linear-gradient(#334E3D, rgba(51, 78, 61, 0.69));
   color:white!important;
+  header{
+    background-color:#334E3D;
+  }
   main{
-    display:flex;
     font-family:'Work Sans';
     font-weight:700;
+    background:linear-gradient(180deg, #334E3D, rgba(51,78,61,.69));
+    padding-bottom:5%;
     section{
       width:100%;
+      position:relative;
     }
     .rows{
       display:flex;
+    }
+    .upper.rows{
+      display:flex;
       justify-content: left;
-      flex-flow:row wrap;
+      flex-flow:column;
       width:100%;
-      &:first-of-type{
-        flex-flow:column;
-      }
-      &:last-of-type{
-        justify-content: space-evenly;
-      }
       div{
         display: flex;
         justify-content: left;
         align-items: center;
         margin-left:50px;
-        h3{
+        h2{
           color:#C4D6A8;
           font-size:36px;
           margin-left:50px;
         }
       }
-      h3{
-        flex-basis:33%;
-        text-align: center;
-      }
       h4{
-        font-size:24px;
+        font-size:$font;
         color:rgba(255, 255, 255, 0.7);
         margin-top:0;
         margin-left:150px;
         width:30%;
+      }
+    }
+    .lower.rows{
+      flex-flow:row wrap;
+      justify-content: space-evenly;
+      div{
+        display:flex;
+        flex-flow:column;
+      }
+      h1{
+        margin-left:-10px;
+        text-align:center;
+        margin-top:auto;
+        margin-bottom:auto
+      }
+      img{
+        margin-top:auto;
+      }
+      h3{
+        text-align: center;
       }
     }
     .number{
@@ -51,6 +71,72 @@ body{
       width: 50px;
       text-align: center;
       line-height: 50px;
+    }
+    .options{
+      width:100%;
+      position:relative;
+      ul{
+        display:flex;
+        flex-flow: column wrap;
+        align-self:center;
+        height:14em;
+        list-style:circle;
+        width:80%;
+        margin-left:10%;
+        padding-left:0;
+        li{
+          color:white;
+          font-size:$font;
+          padding:5px;
+          display:list-item;
+        }
+      }
+      &.toppings{
+        li{
+          height:calc(100%/5);
+        }
+      }
+      &.extras{
+        ul{
+          height:8em;
+          li{
+            height:calc(100%/3);
+          }
+        }
+      }
+      &.combos{
+        h3{
+          color:white;
+          font-size:$font;
+          margin-left:150px;
+        }
+      }
+    }
+  }
+  .otheritems{
+    width:100%;
+    display:flex;
+    flex-flow:column wrap;
+    height:50em;
+    padding:0 4%;
+    div{
+      display:flex;
+      flex-flow:column;
+      flex: 0 0 50%;
+      h1{
+        color:#C4D6A8;
+        font-size:36px;
+        margin-left:70px;
+      }
+      h3{
+        color:white;
+        font-size:$font;
+        span{
+          color:#cccccc;
+          float:left;
+          padding:0 20px;
+        }
+      }
     }
   }
 }

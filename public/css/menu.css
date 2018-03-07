@@ -1,39 +1,53 @@
 body {
   background: linear-gradient(#334E3D, rgba(51, 78, 61, 0.69));
   color: white !important; }
+  body header {
+    background-color: #334E3D; }
   body main {
-    display: flex;
     font-family: 'Work Sans';
-    font-weight: 700; }
+    font-weight: 700;
+    background: linear-gradient(180deg, #334E3D, rgba(51, 78, 61, 0.69));
+    padding-bottom: 5%; }
     body main section {
-      width: 100%; }
+      width: 100%;
+      position: relative; }
     body main .rows {
+      display: flex; }
+    body main .upper.rows {
       display: flex;
       justify-content: left;
-      flex-flow: row wrap;
+      flex-flow: column;
       width: 100%; }
-      body main .rows:first-of-type {
-        flex-flow: column; }
-      body main .rows:last-of-type {
-        justify-content: space-evenly; }
-      body main .rows div {
+      body main .upper.rows div {
         display: flex;
         justify-content: left;
         align-items: center;
         margin-left: 50px; }
-        body main .rows div h3 {
+        body main .upper.rows div h2 {
           color: #C4D6A8;
           font-size: 36px;
           margin-left: 50px; }
-      body main .rows h3 {
-        flex-basis: 33%;
-        text-align: center; }
-      body main .rows h4 {
+      body main .upper.rows h4 {
         font-size: 24px;
         color: rgba(255, 255, 255, 0.7);
         margin-top: 0;
         margin-left: 150px;
         width: 30%; }
+    body main .lower.rows {
+      flex-flow: row wrap;
+      justify-content: space-evenly; }
+      body main .lower.rows div {
+        display: flex;
+        flex-flow: column; }
+      body main .lower.rows h1 {
+        margin-left: -10px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto; }
+      body main .lower.rows img {
+        margin-top: auto; }
+      body main .lower.rows h3 {
+        text-align: center; }
     body main .number {
       padding: 0;
       border-radius: 50%;
@@ -43,3 +57,51 @@ body {
       width: 50px;
       text-align: center;
       line-height: 50px; }
+    body main .options {
+      width: 100%;
+      position: relative; }
+      body main .options ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-self: center;
+        height: 14em;
+        list-style: circle;
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 0; }
+        body main .options ul li {
+          color: white;
+          font-size: 24px;
+          padding: 5px;
+          display: list-item; }
+      body main .options.toppings li {
+        height: calc(100%/5); }
+      body main .options.extras ul {
+        height: 8em; }
+        body main .options.extras ul li {
+          height: calc(100%/3); }
+      body main .options.combos h3 {
+        color: white;
+        font-size: 24px;
+        margin-left: 150px; }
+  body .otheritems {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 50em;
+    padding: 0 4%; }
+    body .otheritems div {
+      display: flex;
+      flex-flow: column;
+      flex: 0 0 50%; }
+      body .otheritems div h1 {
+        color: #C4D6A8;
+        font-size: 36px;
+        margin-left: 70px; }
+      body .otheritems div h3 {
+        color: white;
+        font-size: 24px; }
+        body .otheritems div h3 span {
+          color: #cccccc;
+          float: left;
+          padding: 0 20px; }
