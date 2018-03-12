@@ -1,13 +1,5 @@
 @import 'variables';
 
-@mixin radial-gradient($from, $to) {
-  background: -moz-radial-gradient(bottom, $from 0%, $to 100%);
-  background: -webkit-radial-gradient(bottom, $from 0%, $to 100%);
-  background: -o-radial-gradient(bottom, $from 0%, $to 100%);
-  background: -ms-radial-gradient(bottom, $from 0%, $to 100%);
-  background: radial-gradient(bottom, $from 0%, $to 100%);
-  background-color: $from;
-}
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
   opacity:0;
 }
@@ -58,20 +50,7 @@
   }
 }
 header{
-  @include radial-gradient(rgba(79,137,0,0), rgba(82,135,0,.49));
   height:100vh;
-  overflow: hidden;
-  position: relative;
-  &:before{
-    content:'';
-    background:linear-gradient(to top, #F0F4E8, rgba(240, 244, 232, 0));
-    position:absolute;
-    z-index:0;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-  }
   .welcome-page {
     display: flex;
     align-items: center;
@@ -168,11 +147,12 @@ main{
       justify-content:space-around;
       flex-flow:row wrap;
       background-color:$greenwhite;
-      margin:1% 2%;
+      margin:2% auto;
       margin-bottom:15%;
       box-shadow: 0px 15px 60px rgba(0,0,0,.25);
       position: relative;
       z-index:1;
+      max-width:1000px;
       #map{
         flex:1 1 0;
         #boxone{

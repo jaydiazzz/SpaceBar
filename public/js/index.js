@@ -4,9 +4,9 @@ more.onclick = function(){
   const width = deals[0].style.width;
 
   deals.forEach( ( deal ) => {
-    const left = deal.style.marginLeft.replace( 'px', '' ); // '20px' -> 20
+    const left = deals.style.marginLeft.replace( 'px', '' ); // '20px' -> 20
 
-    deal.style.marginLeft = `${left - width}px`;
+    deals.style.marginLeft = `${left - width}px`;
   } );
 };
 

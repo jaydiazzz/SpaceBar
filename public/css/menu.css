@@ -1,107 +1,150 @@
 body {
-  background: linear-gradient(#334E3D, rgba(51, 78, 61, 0.69));
   color: white !important; }
   body header {
-    background-color: #334E3D; }
-  body main {
-    font-family: 'Work Sans';
-    font-weight: 700;
-    background: linear-gradient(180deg, #334E3D, rgba(51, 78, 61, 0.69));
-    padding-bottom: 5%; }
-    body main section {
+    overflow: hidden;
+    position: relative; }
+    body header:before {
+      content: '';
+      z-index: 0;
+      top: 0;
+      left: 0;
       width: 100%;
-      position: relative; }
-    body main .rows {
-      display: flex; }
-    body main .upper.rows {
+      height: 100%;
+      display: block; }
+  body #menu {
+    padding: 0 5%;
+    position: relative;
+    z-index: 2; }
+    body #menu #menunav {
       display: flex;
-      justify-content: left;
-      flex-flow: column;
-      width: 100%; }
-      body main .upper.rows div {
+      justify-content: space-between; }
+      body #menu #menunav img {
+        width: 250px;
+        height: 125px; }
+      body #menu #menunav a {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        width: 186px;
+        text-align: center;
+        line-height: 62px;
+        height: 62px;
+        right: 50px;
+        top: 25px;
+        position: relative; }
+    body #menu main {
+      font-family: 'Work Sans';
+      font-weight: 700;
+      background: linear-gradient(180deg, #334E3D, rgba(51, 78, 61, 0.69));
+      padding-bottom: 5%; }
+      body #menu main section {
+        width: 100%;
+        position: relative; }
+      body #menu main .rows {
+        display: flex; }
+      body #menu main .upper.rows {
         display: flex;
         justify-content: left;
-        align-items: center;
-        margin-left: 50px; }
-        body main .upper.rows div h2 {
-          color: #C4D6A8;
-          font-size: 36px;
+        flex-flow: column;
+        width: 100%; }
+        body #menu main .upper.rows div {
+          display: flex;
+          justify-content: left;
+          align-items: center;
           margin-left: 50px; }
-      body main .upper.rows h4 {
-        font-size: 24px;
-        color: rgba(255, 255, 255, 0.7);
-        margin-top: 0;
-        margin-left: 150px;
-        width: 30%; }
-    body main .lower.rows {
-      flex-flow: row wrap;
-      justify-content: space-evenly; }
-      body main .lower.rows div {
-        display: flex;
-        flex-flow: column; }
-      body main .lower.rows h1 {
-        margin-left: -10px;
+          body #menu main .upper.rows div h2 {
+            color: #C4D6A8;
+            font-size: 36px;
+            margin-left: 50px; }
+        body #menu main .upper.rows h4 {
+          font-size: 24px;
+          color: rgba(255, 255, 255, 0.7);
+          margin-top: 0;
+          margin-left: 150px;
+          width: 30%; }
+      body #menu main .lower.rows {
+        flex-flow: row wrap;
+        justify-content: space-evenly; }
+        body #menu main .lower.rows div {
+          display: flex;
+          flex-flow: column; }
+        body #menu main .lower.rows h1 {
+          margin-left: -10px;
+          text-align: center;
+          margin-top: auto;
+          margin-bottom: auto; }
+        body #menu main .lower.rows img {
+          margin-top: auto; }
+        body #menu main .lower.rows h3 {
+          text-align: center; }
+      body #menu main .number {
+        padding: 0;
+        border-radius: 50%;
+        background-color: #C4D6A8;
+        color: #334E3D;
+        height: 50px;
+        width: 50px;
         text-align: center;
-        margin-top: auto;
-        margin-bottom: auto; }
-      body main .lower.rows img {
-        margin-top: auto; }
-      body main .lower.rows h3 {
-        text-align: center; }
-    body main .number {
-      padding: 0;
-      border-radius: 50%;
-      background-color: #C4D6A8;
-      color: #334E3D;
-      height: 50px;
-      width: 50px;
-      text-align: center;
-      line-height: 50px; }
-    body main .options {
-      width: 100%;
-      position: relative; }
-      body main .options ul {
-        display: flex;
-        flex-flow: column wrap;
-        align-self: center;
-        height: 14em;
-        list-style: circle;
-        width: 80%;
-        margin-left: 10%;
-        padding-left: 0; }
-        body main .options ul li {
+        line-height: 50px; }
+      body #menu main .options {
+        width: 100%;
+        position: relative; }
+        body #menu main .options ul {
+          display: flex;
+          flex-flow: column wrap;
+          align-self: center;
+          height: 14em;
+          list-style: circle;
+          width: 80%;
+          margin-left: 10%;
+          padding-left: 0; }
+          body #menu main .options ul li {
+            color: white;
+            font-size: 24px;
+            padding: 5px;
+            display: list-item; }
+        body #menu main .options.toppings li {
+          height: calc(100%/5); }
+        body #menu main .options.extras ul {
+          height: 8em; }
+          body #menu main .options.extras ul li {
+            height: calc(100%/3); }
+        body #menu main .options.combos h3 {
           color: white;
           font-size: 24px;
-          padding: 5px;
-          display: list-item; }
-      body main .options.toppings li {
-        height: calc(100%/5); }
-      body main .options.extras ul {
-        height: 8em; }
-        body main .options.extras ul li {
-          height: calc(100%/3); }
-      body main .options.combos h3 {
-        color: white;
-        font-size: 24px;
-        margin-left: 150px; }
-  body .otheritems {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    height: 50em;
-    padding: 0 4%; }
-    body .otheritems div {
+          margin-left: 150px; }
+    body #menu .otheritems {
+      width: 100%;
       display: flex;
-      flex-flow: column;
-      flex: 0 0 50%; }
-      body .otheritems div h1 {
-        color: #C4D6A8;
-        font-size: 36px;
-        margin-left: 70px; }
-      body .otheritems div h3 {
+      flex-flow: column wrap;
+      height: 50em;
+      padding: 0 4%;
+      background-color: #687a6f;
+      background-image: url("/static/img/curveyline.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      body #menu .otheritems div {
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 50%; }
+        body #menu .otheritems div h1 {
+          color: #C4D6A8;
+          font-size: 36px;
+          margin-left: 70px; }
+        body #menu .otheritems div h3 {
+          color: white;
+          font-size: 24px; }
+          body #menu .otheritems div h3 span {
+            color: #cccccc;
+            float: left;
+            padding: 0 20px; }
+    body #menu .kids {
+      background-color: #C4D6A8; }
+      body #menu .kids h3 {
+        color: #596F61;
+        font-size: 36px; }
+      body #menu .kids h4 {
         color: white;
         font-size: 24px; }
-        body .otheritems div h3 span {
-          color: #cccccc;
-          float: left;
-          padding: 0 20px; }

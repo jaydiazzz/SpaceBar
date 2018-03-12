@@ -1,0 +1,82 @@
+<svg width="816" height="74" viewBox="0 0 816 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Vector</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2582 -1766)">
+<rect x="-2582" y="1766" width="816" height="74" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -2686 -63L -1662 -63L -1662 3153L -2686 3153L -2686 -63Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Home Page" clip-path="url(#clip-0)">
+<path d="M -2686 -63L -1662 -63L -1662 3153L -2686 3153L -2686 -63Z" fill="#FFFFFF"/>
+<g id="Rectangle 2.1">
+<use xlink:href="#path0_fill" transform="translate(-2686 1041)" fill="#F8FAF4"/>
+</g>
+<g id="Rectangle 2.2">
+<use xlink:href="#path1_fill" transform="translate(-2686 1741)" fill="#F0F4E8"/>
+</g>
+<g id="Rectangle 3" filter="url(#filter0_d)">
+<use xlink:href="#path2_fill" transform="translate(-2581 400)" fill="#C4C4C4"/>
+</g>
+<clipPath id="clip-1" clip-rule="evenodd">
+<path d="M -2582 398L -1766 398L -1766 2427L -2582 2427L -2582 398Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Menu" clip-path="url(#clip-1)">
+<g id="Rectangle 2.1">
+<use xlink:href="#path3_fill" transform="translate(-2582 398)" fill="url(#paint3_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path4_fill" transform="translate(-2582 1771)" fill="#FFFFFF" fill-opacity="0.12"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path5_stroke" transform="translate(-2582 1771)" fill="url(#paint5_linear)"/>
+<use xlink:href="#path5_stroke" transform="translate(-2582 1771)" fill="url(#paint6_linear)" fill-opacity="0.2"/>
+</g>
+<clipPath id="clip-2" clip-rule="evenodd">
+<path d="M -2582 1795L -2174 1795L -2174 2077L -2582 2077L -2582 1795Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Salads" clip-path="url(#clip-2)">
+</g>
+<clipPath id="clip-3" clip-rule="evenodd">
+<path d="M -2174 1790L -1766 1790L -1766 2187L -2174 2187L -2174 1790Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Extras" clip-path="url(#clip-3)">
+</g>
+<clipPath id="clip-4" clip-rule="evenodd">
+<path d="M -2582 1593L -1766 1593L -1766 1806L -2582 1806L -2582 1593Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Step 4" clip-path="url(#clip-4)">
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="-2640" y="341" width="933" height="2146" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="29.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.529412 0 0 0 0 0.529412 0 0 0 0 0.529412 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint3_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(4.99656e-14 2029 -816 1.2424e-13 816 -1.2424e-13)">
+<stop offset="0" stop-color="#334E3D"/>
+<stop offset="1" stop-color="#334E3D" stop-opacity="0.69"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0429687 76.6582 -982.536 0.550735 899.268 -13.2754)">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.0001" stop-color="#C4D6A8"/>
+<stop offset="1" stop-color="#E8E8E8"/>
+</linearGradient>
+<linearGradient id="paint6_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(4.99603e-14 63.6582 -815.914 3.89794e-15 816 -2.26159e-13)">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#FFFFFF"/>
+</linearGradient>
+<path id="path0_fill" d="M 0 0L 1024 0L 1024 933L 0 933L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 1024 0L 1024 1412L 0 1412L 0 0Z"/>
+<path id="path2_fill" d="M 0 5.00001C 0 2.23858 2.23858 0 5 0L 810 0C 812.761 0 815 2.23858 815 5L 815 2023C 815 2025.76 812.761 2028 810 2028L 5.00001 2028C 2.23859 2028 0 2025.76 0 2023L 0 5.00001Z"/>
+<path id="path3_fill" d="M 0 5.00005C 0 2.23863 2.23858 0 5 0L 811 0C 813.761 0 816 2.23858 816 5L 816 2024C 816 2026.76 813.761 2029 811 2029L 5.00002 2029C 2.2386 2029 0 2026.76 0 2024L 0 5.00005Z"/>
+<path id="path4_fill" d="M 189.722 36.2862C 105.506 17.6295 74.4455 -11.097 0.0859284 4.45023L 0 660L 815.914 660L 816 60.5971C 782.136 73.7346 719.907 41.2545 672.179 26.1565C 611.601 6.99323 523.331 2.55352 429.955 26.1565C 293.703 60.5972 265.417 53.0552 189.722 36.2862Z"/>
+<path id="path5_stroke" d="M 189.722 36.2862L 190.804 31.4045L 189.722 36.2862ZM 429.955 26.1565L 428.729 21.3089L 429.955 26.1565ZM 672.179 26.1565L 673.687 21.3893L 672.179 26.1565ZM 1 4.26089L -0.00496241 -0.637071L 1 4.26089ZM 815 60.9689L 816.677 65.6793L 815 60.9689ZM 188.641 41.1678C 226.381 49.5286 252.943 55.7547 287.178 55.4247C 321.356 55.0954 362.959 48.2486 431.18 31.004L 428.729 21.3089C 360.7 38.5051 320.034 45.1076 287.082 45.4252C 254.188 45.7422 228.758 39.8128 190.804 31.4045L 188.641 41.1678ZM 431.18 31.004C 523.765 7.6009 611.081 12.0731 670.671 30.9236L 673.687 21.3893C 612.12 1.91338 522.896 -2.49386 428.729 21.3089L 431.18 31.004ZM 0 9.26089C 0.136224 9.26089 0.204778 9.2635 0.22834 9.26457C 0.256117 9.26582 0.240935 9.26516 0.338743 9.27202C 0.426012 9.27814 0.750307 9.30289 1.1536 9.27666C 1.53846 9.25162 1.84974 9.19071 2.00496 9.15886L -0.00496241 -0.637071C 0.000827071 -0.638259 0.0165768 -0.641451 0.0396789 -0.645716C 0.0629117 -0.650006 0.0973065 -0.656074 0.140337 -0.662714C 0.229872 -0.67653 0.354474 -0.692494 0.504444 -0.70225C 0.578141 -0.707044 0.649928 -0.70982 0.719282 -0.710884C 0.788054 -0.711938 0.848379 -0.711215 0.898017 -0.709872C 0.946551 -0.70856 0.984617 -0.706655 1.007 -0.705403C 1.02838 -0.704207 1.04181 -0.703236 1.03865 -0.703458C 1.0376 -0.703531 1.03502 -0.703715 1.02889 -0.704159C 1.02587 -0.704379 1.02275 -0.704606 1.01861 -0.704907C 1.0147 -0.705191 1.01004 -0.705531 1.00511 -0.705888C 0.985256 -0.707327 0.957246 -0.709336 0.92465 -0.711516C 0.856992 -0.716041 0.775667 -0.720905 0.679704 -0.725241C 0.48759 -0.733921 0.267351 -0.739107 0 -0.739107L 0 9.26089ZM 2.00496 9.15886C 37.9275 1.78829 63.3271 5.04453 90.2196 12.4556C 103.835 16.2078 117.68 20.9781 133.698 26.0813C 149.636 31.1589 167.467 36.4772 188.641 41.1678L 190.804 31.4045C 170.042 26.8051 152.528 21.585 136.734 16.5532C 121.02 11.547 106.745 6.63679 92.8763 2.81494C 64.8006 -4.92217 37.7741 -8.38857 -0.00496235 -0.637071L 2.00496 9.15886ZM 670.671 30.9236C 682.329 34.6113 694.899 39.3621 707.867 44.284C 720.782 49.1859 734.078 54.2526 746.98 58.4715C 759.872 62.6873 772.556 66.12 784.284 67.7055C 795.971 69.2855 807.102 69.0884 816.677 65.6793L 813.323 56.2586C 805.859 58.916 796.526 59.2695 785.624 57.7956C 774.763 56.3273 762.733 53.1018 750.088 48.9667C 737.451 44.8346 724.386 39.8577 711.416 34.9348C 698.498 30.032 685.661 25.1769 673.687 21.3893L 670.671 30.9236ZM 816.677 65.6793C 816.743 65.6556 816.706 65.6694 816.657 65.6853C 816.624 65.6962 816.552 65.7193 816.458 65.7454C 816.361 65.772 816.216 65.8085 816.037 65.8404C 815.851 65.8737 815.64 65.9 815.408 65.9107C 815.176 65.9213 814.969 65.9141 814.793 65.8997C 814.628 65.8862 814.499 65.8669 814.439 65.8573C 814.386 65.8489 814.34 65.8405 814.364 65.8448C 814.396 65.8506 814.502 65.8699 814.639 65.8891C 814.774 65.908 814.914 65.9234 815.062 65.9355C 815.348 65.9589 815.657 65.9689 816 65.9689L 816 55.9689C 815.843 55.9689 815.819 55.964 815.876 55.9687C 815.91 55.9714 815.961 55.9766 816.026 55.9857C 816.093 55.9951 816.147 56.005 816.138 56.0033C 816.135 56.0028 816.118 55.9998 816.1 55.9966C 816.081 55.9933 816.048 55.9876 816.008 55.9812C 815.931 55.9689 815.787 55.9476 815.608 55.933C 815.176 55.8977 814.73 55.9156 814.278 55.9965C 813.912 56.0618 813.629 56.1543 813.539 56.1838C 813.441 56.2161 813.341 56.2523 813.323 56.2586L 816.677 65.6793Z"/>
+</defs>
+</svg>

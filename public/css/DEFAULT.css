@@ -42,43 +42,61 @@ body {
   body a {
     text-decoration: none;
     color: inherit; }
-  body nav {
-    width: 100%;
+  body header {
+    background: -moz-radial-gradient(bottom, rgba(79, 137, 0, 0) 0%, rgba(82, 135, 0, 0.49) 100%);
+    background: -webkit-radial-gradient(bottom, rgba(79, 137, 0, 0) 0%, rgba(82, 135, 0, 0.49) 100%);
+    background: -o-radial-gradient(bottom, rgba(79, 137, 0, 0) 0%, rgba(82, 135, 0, 0.49) 100%);
+    background: -ms-radial-gradient(bottom, rgba(79, 137, 0, 0) 0%, rgba(82, 135, 0, 0.49) 100%);
+    background: radial-gradient(bottom, rgba(79, 137, 0, 0) 0%, rgba(82, 135, 0, 0.49) 100%);
+    background-color: rgba(79, 137, 0, 0);
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap; }
-    body nav #logo_container {
-      flex: 1 0 0;
-      align-self: normal; }
-      body nav #logo_container img {
-        width: 50%;
-        height: 140px;
-        margin-left: 10%;
-        position: relative; }
-    body nav #links {
+    position: relative; }
+    body header:before {
+      content: '';
+      background: linear-gradient(to top, #F0F4E8, rgba(240, 244, 232, 0));
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; }
+    body header nav {
+      width: 100%;
+      overflow: hidden;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      flex: 1 0 0;
-      align-self: normal; }
-      body nav #links a {
-        color: white;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 600;
-        position: relative;
-        z-index: 2; }
-    body nav #social {
-      display: flex;
-      align-items: center;
-      flex: 1 0 0;
-      align-self: normal;
-      justify-content: space-evenly; }
-      body nav #social a {
-        padding: 10px;
-        color: white;
-        position: relative;
-        margin: 0 3px; }
+      flex-flow: row wrap; }
+      body header nav #logo_container {
+        flex: 1 0 0;
+        align-self: normal; }
+        body header nav #logo_container img {
+          width: 50%;
+          height: 140px;
+          margin-left: 10%;
+          position: relative; }
+      body header nav #links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1 0 0;
+        align-self: normal; }
+        body header nav #links a {
+          color: white;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 600;
+          position: relative;
+          z-index: 2; }
+      body header nav #social {
+        display: flex;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: normal;
+        justify-content: space-evenly; }
+        body header nav #social a {
+          padding: 10px;
+          color: white;
+          position: relative;
+          margin: 0 3px; }
   body footer {
     background: url(/static/img/footer.svg);
     background-size: cover;
