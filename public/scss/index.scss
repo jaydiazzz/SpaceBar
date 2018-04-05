@@ -5,6 +5,7 @@
 }
 .swiper-button-prev,.swiper-button-next{
   background-image:none!important;
+  top:220px;
   &:before{
     color: $darkgreen;
   }
@@ -103,6 +104,26 @@ main{
     position: absolute;
     z-index: 0;
     left:0;
+  }
+  #visalia{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position:absolute;
+    z-index: 1;
+    width:10%;
+    top:10%;
+    text-align: center;
+    h4{
+      color:$darkgreen;
+      margin:5px 0;
+    }
+    a{
+      color:$gray;
+    }
+  }
+  #visalia{
+    right:0;
   }
   #info{
     display:flex;

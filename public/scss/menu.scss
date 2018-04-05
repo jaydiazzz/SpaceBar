@@ -14,6 +14,51 @@ body{
       height:100%;
       display:block;
     }
+    div{
+      padding-left:5%;
+      overflow:hidden;
+      #logowall{
+        background-image:url("/static/img/35c094.jpg");
+        background-size:cover;
+        background-position:center;
+        border-radius:50%;
+        width:250px;
+        height:250px;
+        float:left;
+        margin-right:5%;
+        margin-bottom:5%;
+      }
+      #appstore{
+        height:250px;
+        margin-left:5%;
+        float:left;
+        h2,h4{
+          color:$lightgreen;
+        }
+        h2{
+          font-size:42px;
+        }
+        h4{
+          font-size:32px;
+          font-weight:lighter;
+        }
+        .googleplay,.apple{
+          float:left;
+          width:35%;
+          background-size:100% 100%;
+          background-position:center;
+          background-repeat: no-repeat;
+          height:50px;
+        }
+        .googleplay{
+          background-image:url('/static/img/android.png');
+        }
+        .apple{
+          margin-left:5%;
+          background-image:url('/static/img/apple.png');
+        }
+      }
+    }
   }
   #menu{
     padding: 0 5%;
@@ -175,8 +220,12 @@ body{
       }
     }
     .kids{
-      background-color:#C4D6A8;
-
+      background-color: #687a6f;
+      background-image: url(/static/img/greenbump.png);
+      background-size: 100% 100%;
+      background-position: center;
+      padding: 5% 5%;
+      margin-bottom:10%;
       h3{
         color: #596F61;
         font-size:36px;

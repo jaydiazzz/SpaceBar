@@ -6,6 +6,13 @@ block customCSS
 block content
   header
     include ./partials/nav.pug
+    div
+      #logowall
+      #appstore
+        h2 Order Online Today
+        h4 Download the app
+        .googleplay
+        .apple
     #menu
       main
         #menunav
@@ -117,9 +124,4 @@ block content
   include ./partials/_footer.pug
   block customFooter
   block customJS
-    script.
-      var headerheight = document.querySelector("header").style.height,
-      loco = window.getComputedStyle(document.querySelector("header"), ":before").getPropertyValue('height');
-      console.log(loco);
-      window.getComputedStyle(document.querySelector("header"), ":before").style.height = headerheight;
       

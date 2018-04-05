@@ -11,6 +11,42 @@ body {
       width: 100%;
       height: 100%;
       display: block; }
+    body header div {
+      padding-left: 5%;
+      overflow: hidden; }
+      body header div #logowall {
+        background-image: url("/static/img/35c094.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin-right: 5%;
+        margin-bottom: 5%; }
+      body header div #appstore {
+        height: 250px;
+        margin-left: 5%;
+        float: left; }
+        body header div #appstore h2, body header div #appstore h4 {
+          color: #82A949; }
+        body header div #appstore h2 {
+          font-size: 42px; }
+        body header div #appstore h4 {
+          font-size: 32px;
+          font-weight: lighter; }
+        body header div #appstore .googleplay, body header div #appstore .apple {
+          float: left;
+          width: 35%;
+          background-size: 100% 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 50px; }
+        body header div #appstore .googleplay {
+          background-image: url("/static/img/android.png"); }
+        body header div #appstore .apple {
+          margin-left: 5%;
+          background-image: url("/static/img/apple.png"); }
   body #menu {
     padding: 0 5%;
     position: relative;
@@ -120,11 +156,7 @@ body {
       flex-flow: column wrap;
       height: 50em;
       padding: 0 4%;
-      background-color: #687a6f;
-      background-image: url("/static/img/curveyline.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: cover; }
+      background-color: #687a6f; }
       body #menu .otheritems div {
         display: flex;
         flex-flow: column;
@@ -141,7 +173,12 @@ body {
             float: left;
             padding: 0 20px; }
     body #menu .kids {
-      background-color: #C4D6A8; }
+      background-color: #687a6f;
+      background-image: url(/static/img/greenbump.png);
+      background-size: 100% 100%;
+      background-position: center;
+      padding: 5% 5%;
+      margin-bottom: 10%; }
       body #menu .kids h3 {
         color: #596F61;
         font-size: 36px; }
