@@ -14,16 +14,16 @@ function continuous() {
   }
 };
 setInterval(continuous,500);
-const now = new Date();
+const now   = new Date();
 var weekday = new Array(7);
-weekday[0] =  "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-var n = weekday[now.getDay()];
+weekday[0]  =  "Sunday";
+weekday[1]  = "Monday";
+weekday[2]  = "Tuesday";
+weekday[3]  = "Wednesday";
+weekday[4]  = "Thursday";
+weekday[5]  = "Friday";
+weekday[6]  = "Saturday";
+var n       = weekday[now.getDay()];
 console.log(n);
 var green = "#518702";
 if(n === "Sunday"){
