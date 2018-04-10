@@ -295,10 +295,21 @@ main {
         line-height: 25px; }
 
 @media screen and (max-width: 650px) {
+  .object {
+    width: 0 !important;
+    height: 0 !important; }
+  #stackedcontainer {
+    width: 100%; }
+    #stackedcontainer img {
+      width: 100%; }
+  #visalia {
+    width: 20% !important; }
   #deals #botm {
     width: 90%;
     margin: auto;
     flex-flow: column-reverse;
     align-items: center; }
     #deals #botm .desc {
-      width: auto; } }
+      width: auto; }
+    #deals #botm .burger {
+      width: 100% !important; } }

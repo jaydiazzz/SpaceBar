@@ -364,6 +364,19 @@ main{
 }
 
 @media screen and (max-width:650px){
+  .object{
+    width:0!important;
+    height:0!important;
+  }
+  #stackedcontainer{
+    width:100%;
+    img{
+      width:100%;
+    }
+  }
+  #visalia{
+    width:20%!important;
+  }
   #deals #botm{
     width:90%;
     margin:auto;
@@ -371,6 +384,9 @@ main{
     align-items: center;
     .desc{
       width:auto;
+    }
+    .burger{
+      width:100%!important;
     }
   }
 }

@@ -17,3 +17,14 @@ window.addEventListener( 'keypress', (function() {
       }
   };
 }()) );
+
+var burger = document.querySelector("#hamburger");
+burger.onclick = function(){
+  document.querySelector("#links").classList.toggle("open");
+  if (document.querySelector("#links").classList.contains("open")){
+    burger.style.left = "-32%";
+  }
+  else{
+    burger.style.left = "-25px";
+  }
+};
