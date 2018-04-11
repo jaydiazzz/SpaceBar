@@ -4,6 +4,9 @@
   transition: .3s ease-in-out;
   box-sizing: border-box;
 }
+.slide1{
+  display:none;
+}
 .button {
   padding: 15px;
   border-radius: 3px;
@@ -162,6 +165,9 @@ body{
 }
 
 @media screen and (max-width:650px){
+  .slide1{
+    display:block;
+  }
   .logo{
     width:100%;
   }
