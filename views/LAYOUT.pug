@@ -2,8 +2,12 @@ doctype html
 html(lang="en")
     include ./partials/_head.pug
     body
-      block content
-        block customFooter
+      .allwrap.swiper-container
+        .swiper-wrapper.mainwrapper
+          .swiper-slide.slide1.menu
+          .swiper-slide.slide2.content
+            block content
+              block customFooter
     // pluginJS
     // ajax
     // VueJS
@@ -13,3 +17,23 @@ html(lang="en")
     script(src="/static/js/GLOBALS.js")
     // customJS
     block customJS
+    script.
+      var menuButton = document.querySelector('#hamburger');
+      var swiper = new Swiper('.allwrap', {
+        slidesPerView: 'auto',
+        initialSlide: 0,
+        resistanceRatio: 0,
+        slideToClickedSlide: true,
+        on: {
+          init: function () {
+            var slider = this;
+            menuButton.addEventListener('click', function () {
+              if (slider.activeIndex === 0) {
+                slider.slideNext();
+              } else {
+                slider.slidePrev();
+              }
+            }, true);
+          },
+        }
+      });

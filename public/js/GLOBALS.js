@@ -18,13 +18,18 @@ window.addEventListener( 'keypress', (function() {
   };
 }()) );
 
-var burger = document.querySelector("#hamburger");
-burger.onclick = function(){
-  document.querySelector("#links").classList.toggle("open");
-  if (document.querySelector("#links").classList.contains("open")){
-    burger.style.left = "-32%";
-  }
-  else{
-    burger.style.left = "-25px";
-  }
-};
+// var burger = document.querySelector("#hamburger");
+// burger.onclick = function(){
+//   document.querySelector("#links").classList.toggle("open");
+//   if (document.querySelector("#links").classList.contains("open")){
+//     burger.style.left = "-32%";
+//   }
+//   else{
+//     burger.style.left = "-25px";
+//   }
+// };
+
+if(document.body.clientWidth < 650){
+  document.querySelector(".slide1").append(document.querySelector("#links"));
+  document.querySelector(".mainwrapper").append(document.querySelector(".slide1"));
+}
