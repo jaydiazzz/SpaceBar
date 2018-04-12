@@ -90,7 +90,7 @@ body {
           position: relative;
           z-index: 2; }
           body header nav #links a.contact {
-            opacity: 0; }
+            display: none; }
       body header nav #social {
         display: flex;
         align-items: center;
@@ -142,6 +142,8 @@ body {
     display: none; }
 
 @media screen and (max-width: 650px) {
+  .contact {
+    display: block; }
   .slide1 {
     display: block; }
   .logo {

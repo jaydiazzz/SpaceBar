@@ -94,7 +94,7 @@ body{
           position:relative;
           z-index:2;
           &.contact{
-            opacity:0;
+            display:none;
           }
         }
       }
@@ -165,6 +165,9 @@ body{
 }
 
 @media screen and (max-width:650px){
+  .contact{
+    display:block;
+  }
   .slide1{
     display:block;
   }
