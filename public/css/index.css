@@ -277,7 +277,6 @@ main {
       right: -3%; }
     #deals #items .adeal {
       background-color: white;
-      width: 35vw !important;
       border-radius: 5px;
       margin-left: 5%; }
       #deals #items .adeal .images {
@@ -302,6 +301,9 @@ main {
         line-height: 25px; }
 
 @media screen and (max-width: 650px) {
+  .swiper-button-prev, .swiper-button-next {
+    width: 0;
+    overflow: hidden; }
   .object {
     width: 0 !important;
     height: 0 !important; }
@@ -310,7 +312,10 @@ main {
     #stackedcontainer img {
       width: 100%; }
   #visalia {
-    width: 20% !important; }
+    width: 0% !important;
+    overflow: hidden; }
+  #location {
+    flex-flow: column; }
   #deals #botm {
     width: 90%;
     margin: auto;
@@ -319,6 +324,4 @@ main {
     #deals #botm .desc {
       width: auto; }
     #deals #botm .burger {
-      width: 100% !important; }
-  .adeal {
-    width: 75vw !important; } }
+      width: 100% !important; } }

@@ -13,6 +13,9 @@ function continuous() {
     document.querySelector(".directions").href = "";
   }
 };
+if(document.body.clientWidth < 650){
+  document.querySelector(".directions").innerText = "SWIPE TO VIEW OTHER LOCATIONS";
+}
 setInterval(continuous,500);
 const now   = new Date();
 var weekday = new Array(7);

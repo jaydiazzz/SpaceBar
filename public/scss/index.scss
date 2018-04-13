@@ -338,7 +338,6 @@ main{
     }
     .adeal{
       background-color:white;
-      width:35vw!important;
       border-radius:5px;
       margin-left:5%;
       .images{
@@ -371,6 +370,10 @@ main{
 }
 
 @media screen and (max-width:650px){
+  .swiper-button-prev, .swiper-button-next{
+    width:0;
+    overflow:hidden;
+  }
   .object{
     width:0!important;
     height:0!important;
@@ -382,7 +385,11 @@ main{
     }
   }
   #visalia{
-    width:20%!important;
+    width:0%!important;
+    overflow:hidden;
+  }
+  #location{
+    flex-flow:column;
   }
   #deals #botm{
     width:90%;
@@ -395,8 +402,5 @@ main{
     .burger{
       width:100%!important;
     }
-  }
-  .adeal{
-    width:75vw!important;
   }
 }
