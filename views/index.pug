@@ -4,22 +4,6 @@ block customCSS
   link(rel="stylesheet" href="/static/css/index.css" type='text/css')
 
 block content
-  #modalback
-    table#modal
-      tbody
-        tr(style="width:100%")
-          th Which Location?
-            i.fas.fa-times-circle
-        tr
-          td
-            a(href="https://goo.gl/maps/5hnbbdy6Ufz")
-              span •
-              |Kingsburg
-        tr
-          td
-            a(href="#")
-              span •
-              |Visalia
   header
     include ./partials/nav.pug
     .welcome-page
@@ -182,6 +166,7 @@ block content
                   td.ss 10am - 10am
       .swiper-button-prev.fas.fa-angle-left.fa-3x
       .swiper-button-next.fas.fa-angle-right.fa-3x
+      .swiper-pagination
   #deals
     #ovector
     h2.burgerof Burger of the Month
@@ -225,9 +210,19 @@ block customJS
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
+    //- var width;
+    //- if(document.body.clientWidth < 650){
+    //-   width = "75vw";
+    //- }
+    //- else{
+    //-   width = "35vw";
+    //- }
     var swiper2 = new Swiper ('.s2', {
-      width:"35vw",
+      //- width: width,
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next2',

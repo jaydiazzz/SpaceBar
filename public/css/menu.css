@@ -25,7 +25,7 @@ body {
         margin-right: 5%;
         margin-bottom: 5%; }
       body header div #appstore {
-        height: 250px;
+        height: 100%;
         margin-left: 5%;
         float: left; }
         body header div #appstore h2, body header div #appstore h4 {
@@ -185,3 +185,37 @@ body {
       body #menu .kids h4 {
         color: white;
         font-size: 24px; }
+
+@media screen and (max-width: 650px) {
+  body header > div {
+    padding-bottom: 2%;
+    margin-left: 0 !important; }
+  body header #menunav {
+    display: flex;
+    padding-bottom: 15%;
+    flex-flow: row wrap; }
+    body header #menunav a {
+      margin-left: auto; }
+  body header .upper div {
+    margin-left: 0 !important; }
+    body header .upper div h2 {
+      margin-left: 10% !important; }
+  body header .upper h4 {
+    margin-left: 10% !important;
+    width: 80% !important;
+    text-align: center; }
+  body header .lower {
+    padding-left: 0 !important; }
+  body header .options ul {
+    height: auto !important;
+    flex-flow: column !important;
+    margin-left: 15% !important; }
+  body header .options h3 {
+    margin-left: 5% !important; }
+  body header .kids h3 {
+    margin-bottom: 2%;
+    margin-top: 40%;
+    font-size: 32px; }
+  body header .otheritems {
+    flex-flow: column !important;
+    height: auto !important; } }
