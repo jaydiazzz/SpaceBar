@@ -34,25 +34,28 @@ html(lang="en")
     // customJS
     block customJS
     script.
-      if(document.body.clientWidth < 600){
-        var menuButton = document.querySelector('#hamburger');
-        var swiper = new Swiper('.allwrap', {
-          slidesPerView: 'auto',
-          initialSlide: 0,
-          resistanceRatio: 0,
-          slideToClickedSlide: true,
-          nested: true,
-          on: {
-            init: function () {
-              var slider = this;
-              menuButton.addEventListener('click', function () {
-                if (slider.activeIndex === 0) {
-                  slider.slideNext();
-                } else {
-                  slider.slidePrev();
-                }
-              }, true);
-            },
-          }
-        });
+      function(){
+        if(document.body.clientWidth < 600){
+          var menuButton = document.querySelector('#hamburger');
+          var swiper = new Swiper('.allwrap', {
+            height: 100,
+            slidesPerView: 'auto',
+            initialSlide: 0,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            nested: true,
+            on: {
+              init: function () {
+                var slider = this;
+                menuButton.addEventListener('click', function () {
+                  if (slider.activeIndex === 0) {
+                    slider.slideNext();
+                  } else {
+                    slider.slidePrev();
+                  }
+                }, true);
+              },
+            }
+          });
+        }
       }
