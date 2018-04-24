@@ -34,11 +34,11 @@ html(lang="en")
     // customJS
     block customJS
     script.
-      function(){
         if(document.body.clientWidth < 600){
           var menuButton = document.querySelector('#hamburger');
-          var swiper = new Swiper('.allwrap', {
+          var swiperM = new Swiper('.allwrap', {
             height: 100,
+            width: 150,
             slidesPerView: 'auto',
             initialSlide: 0,
             resistanceRatio: 0,
@@ -58,4 +58,3 @@ html(lang="en")
             }
           });
         }
-      }

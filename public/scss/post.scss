@@ -1,0 +1,80 @@
+$blue:#4da6ff;
+
+*{
+  font-family:'Raleway', sans-serif;
+}
+
+a,.image label,.submit{
+  font-size:16px;
+  width:120px;
+  height:60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius:3px;
+  background-color:white;
+  color:$blue!important;
+  border:1px solid lighten(black, 30%);
+  &:hover{
+    background-color:#e6e6e6;
+    cursor:pointer;
+  }
+}
+
+body{
+  form{
+    padding:2%;
+    background-color:darken(white, 5%);
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    .image{
+      display:flex;
+      justify-content: space-evenly;
+      align-items:center;
+      flex-flow:row;
+      position:relative;
+      img{
+        width:500px;
+        height:350px;
+      }
+      .upload{
+        opacity: 0;
+        width: 120px;
+        height: 60px;
+        position: relative;
+        z-index: 2;
+      }
+      label{
+        position:absolute;
+        margin-top:-60px;
+      }
+      .upload:hover{
+        cursor:pointer;
+      }
+      .upload:hover + label{
+        background-color:#e6e6e6;
+      }
+    }
+    .description{
+      padding-left:20px;
+      padding-top:20px;
+      padding-bottom: 18%;
+      width: 50%;
+      align-self: center;
+      margin:5% 0;
+    }
+    .postactions{
+      display:flex;
+      justify-content: space-evenly;
+      flex-flow:row;
+      .submit{
+        background-color:$blue;
+        color:white!important;
+        border:none;
+        &:hover{
+          background-color:darken($blue, 10%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    include ./partials/_head.pug
+    block customCSS
+      link(rel="stylesheet" href="/static/css/post.css" type='text/css')
+      link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+    body
+      form
+        div.image
+          img#output_image(src="http://via.placeholder.com/500x350")
+          #upload_div
+            input.upload(type="file" title="Upload" accept="image/*" onchange="preview_image(event)" required)
+            label(for="upload") Upload
+        input.description(type="text" placeholder="Write description..." required)
+        
+        .postactions
+          a.clear(href="#") Clear
+          input.submit(type="submit" title="Submit")
+    script. 
+      function preview_image(event){
+        var reader = new FileReader();
+        reader.onload = function(){
+          var output = document.getElementById('output_image');
+          output.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+      }

@@ -1,0 +1,62 @@
+* {
+  font-family: 'Raleway', sans-serif; }
+
+a, .image label, .submit {
+  font-size: 16px;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 3px;
+  background-color: white;
+  color: #4da6ff !important;
+  border: 1px solid #4d4d4d; }
+  a:hover, .image label:hover, .submit:hover {
+    background-color: #e6e6e6;
+    cursor: pointer; }
+
+body form {
+  padding: 2%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-flow: column; }
+  body form .image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+    position: relative; }
+    body form .image img {
+      width: 500px;
+      height: 350px; }
+    body form .image .upload {
+      opacity: 0;
+      width: 120px;
+      height: 60px;
+      position: relative;
+      z-index: 2; }
+    body form .image label {
+      position: absolute;
+      margin-top: -60px; }
+    body form .image .upload:hover {
+      cursor: pointer; }
+    body form .image .upload:hover + label {
+      background-color: #e6e6e6; }
+  body form .description {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 18%;
+    width: 50%;
+    align-self: center;
+    margin: 5% 0; }
+  body form .postactions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row; }
+    body form .postactions .submit {
+      background-color: #4da6ff;
+      color: white !important;
+      border: none; }
+      body form .postactions .submit:hover {
+        background-color: #1a8dff; }
