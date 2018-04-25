@@ -5,7 +5,7 @@ html(lang="en")
       link(rel="stylesheet" href="/static/css/post.css" type='text/css')
       link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
     body
-      form
+      form.form
         div.image
           img#output_image(src="http://via.placeholder.com/500x350")
           #upload_div
@@ -24,4 +24,9 @@ html(lang="en")
           output.src = reader.result;
         }
         reader.readAsDataURL(event.target.files[0]);
+      }
+      document.querySelector(".clear").onclick = function(){
+        document.querySelector("#output_image").src= "http://via.placeholder.com/500x350";
+        document.querySelector(".upload").value= "";
+        document.querySelector("form").reset();
       }
