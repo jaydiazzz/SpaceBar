@@ -25,7 +25,7 @@ fs.readdirSync( './views' ).forEach( ( item ) => {
   // e.g. 'index'
   const fileName = pieces[0];
   router.get( `/${fileName}`, ( req, res ) => {
-    res.render( fileName )
+    res.render( fileName );
   } );
 
 } );

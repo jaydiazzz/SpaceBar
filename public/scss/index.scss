@@ -121,6 +121,7 @@ main{
     width:10%;
     top:10%;
     text-align: center;
+    right:0;
     h4{
       color:$darkgreen;
       margin:5px 0;
@@ -128,9 +129,6 @@ main{
     a{
       color:$gray;
     }
-  }
-  #visalia{
-    right:0;
   }
   #info{
     display:flex;
@@ -167,23 +165,23 @@ main{
     }
   }
   .container{
-    background-color:#f8faf4;
+    background:linear-gradient(to bottom, $greenwhite, rgba($greenwhite, 0));
     width:100%;
     overflow: hidden;
-    #location{
+    .location{
       display:flex;
       justify-content:space-around;
       flex-flow:row wrap;
-      background-color:$greenwhite;
       margin:2% auto;
       margin-bottom:15%;
       box-shadow: 0px 15px 60px rgba(0,0,0,.25);
       position: relative;
       z-index:1;
       max-width:1000px;
-      #map{
+      border-radius:5px;
+      .map{
         flex:1 1 0;
-        #boxone{
+        .boxone{
           width:100%;
         }
         .button{
@@ -191,7 +189,7 @@ main{
           text-align:center;
         }
       }
-      #hours{
+      .hours-container{
         flex:1 1 0;
         background-color:white;
         padding:10px;
@@ -311,6 +309,10 @@ main{
         color:$darkgreen;
         font-size:36px;
       }
+      p{
+        color:#4a4a4a;
+        line-height:150%;
+      }
     }
     .picofburger{
       position:relative;
@@ -361,7 +363,7 @@ main{
       }
       p{
         text-align:center;
-        color:$gray;
+        color:#4a4a4a;
         padding:4%;
         line-height:25px;
       }
@@ -388,8 +390,8 @@ main{
     width:0%!important;
     overflow:hidden;
   }
-  #location{
-    flex-flow:column;
+  .location{
+    flex-flow:column!important;
   }
   #deals #botm{
     width:90%;
