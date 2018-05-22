@@ -13,11 +13,6 @@ var app = new Vue({
   },
 
   computed: {
-    /*
-            Determines if the user is authenticated
-
-            @return boolean
-            */
     isAuthenticated: function () {
       // This function changes the auth.user state when
       // the auth status of user changes.
@@ -27,11 +22,9 @@ var app = new Vue({
         } else {
           this.auth.user = null
         }
-      }.bind(this))
-
+      }.bind(this));
       return (this.auth.user !== null)
     }
-
   }
 
 })
@@ -39,7 +32,7 @@ var app = new Vue({
 firebase.auth().onAuthStateChanged(function (user) {
   // DELETE ELSE STATEMENT WHEN YOU FIGURE THIS OUT
   if (firebase.auth().currentUser === null) {
-    alert('No')
+    window.location.href = '/login'
   } else {
     alert('Hello')
   }

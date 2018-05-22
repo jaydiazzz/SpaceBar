@@ -3,6 +3,11 @@ $blue:#4da6ff;
 *{
     transition:.3s ease-in-out;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
 body{
     margin:0;
     font-family:'Work Sans', sans-serif;
@@ -44,12 +49,6 @@ body{
                 box-shadow: 2px 2px 2px rgba(#333333,.6);
             }
         } 
-        .close{
-            color:crimson;
-            font-size:36px;
-            background-color:transparent;
-            border:none;
-        }
     }
     .alert{
         width:100vw;
@@ -62,7 +61,11 @@ body{
         .close{
             right:25px;
             position:absolute;
+            color:crimson;
             font-size:64px;
+            background-color:transparent;
+            border:none;
+
             &:hover{
                 cursor:pointer;
             }

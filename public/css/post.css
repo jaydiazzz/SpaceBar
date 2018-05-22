@@ -1,5 +1,6 @@
 * {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  transition: 3s ease-in-out; }
 
 body {
   color: white;
@@ -13,6 +14,16 @@ a {
   background-color: #B3ECFF;
   padding: 15px 50px;
   text-shadow: 1px 1px 1px black; }
+
+.fadeOut {
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 #locations, #description, #submit {
   display: flex;
@@ -64,11 +75,27 @@ a {
 .middle input, .middle iframe {
   width: 600px; }
 
-.middle input {
-  padding-bottom: 400px; }
-
-.middle iframe {
-  height: 420px; }
+.middle {
+  position: relative; }
+  .middle input {
+    padding-bottom: 400px; }
+  .middle iframe {
+    height: 420px; }
+  .middle #overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0; }
+    .middle #overlay h4 {
+      top: 50%;
+      text-align: center;
+      font-size: 22px;
+      position: relative;
+      margin: 0; }
 
 #submit {
   justify-content: flex-end; }

@@ -35,7 +35,6 @@ var app = new Vue({
         }).catch(function (error) {
           vm.auth.message = error.message
           vm.auth.hasErrors = true
-          window.location.href = "/post"
         })
     },
 
