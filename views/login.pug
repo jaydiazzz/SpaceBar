@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Firebase Authentication using Vue.js - Codedodle
+    link(rel='stylesheet', href='/static/css/login.css', type="text/css")
+    script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
+    script(src='libs/vue.js')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather|Work+Sans', rel='stylesheet')
+  body
+    #app.container
+      #loginContainer(v-if='!isAuthenticated')
+        h1(style='text-align: center;') Menu Posting
+        form
+          .form-row
+            label Email:
+            input(v-model:email='auth.email', type='email', placeholder='Email')
+          .form-row
+            label Password:
+            input(v-model:password='auth.password', type='password', placeholder='Password')
+          .alert(v-if="auth.message !== ''", role='alert', :class="{'alert-danger': auth.hasErrors, 'alert-success': !auth.hasErrors}")
+            button.close(@click='dismissAlert', type='button')
+              span(aria-hidden='true') ×
+            p
+              strong {{auth.message}}
+          button.btn(type='button', @click='login') Login
+      #content(v-if='isAuthenticated')
+        h3.panel-title Welcome {{displayName()}}
+        p You have been currently logged-in using firebase.
+        br
+        h4 {{displayName()}} Profile Details
+        hr
+        form.form-horizontal
+          .form-row
+            label(for='UserName') Username
+            input(v-model='auth.userName', type='text', placeholder='Username', name='UserName')
+          .form-row
+            button.btn.btn-default(@click='updateProfile', type='button') Update Profile
+        .alert(v-if="auth.message !== ''", role='alert', :class="{'alert-danger': auth.hasErrors, 'alert-success': !auth.hasErrors}")
+          button.close(@click='dismissAlert', type='button')
+            span(aria-hidden='true') ×
+          p
+            strong {{auth.message}}
+        button.btn.btn-signout(@click='signOut', type='button') Signout
+    script(src='https://www.gstatic.com/firebasejs/5.0.2/firebase.js')
+    script.
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyBvbS4VXHWx-x1a6Fax9jFtMGw7DZl5v-U",
+      authDomain: "testing-90675.firebaseapp.com",
+      databaseURL: "https://testing-90675.firebaseio.com",
+      projectId: "testing-90675",
+      storageBucket: "testing-90675.appspot.com",
+      messagingSenderId: "293983059765"
+      };
+      firebase.initializeApp(config);
+    script(type='text/javascript', src='/static/js/login.js')
