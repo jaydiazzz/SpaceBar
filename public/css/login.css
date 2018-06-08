@@ -1,60 +1,78 @@
 * {
   transition: .3s ease-in-out; }
 
+.btn {
+  width: 40%;
+  height: 35px;
+  border: transparent;
+  background-color: #4da6ff;
+  align-self: flex-end;
+  font-size: 16px;
+  font-family: 'Merriweather', sans-serif;
+  color: white; }
+  .btn:hover {
+    background-color: #80c0ff;
+    box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.6); }
+
 button:hover {
   cursor: pointer; }
 
 body {
   margin: 0;
   font-family: 'Work Sans', sans-serif; }
-  body #app h1 {
-    font-family: 'Merriweather', sans-serif;
-    font-weight: 300; }
-  body input[type="text"] {
-    padding: 10px 0px 25px 5px; }
-  body form {
+  body #app {
+    padding: 2% 0;
     display: flex;
-    flex-flow: column;
-    width: 30vw;
-    min-width: 300px;
-    max-width: 350px;
-    margin: auto;
+    flex-flow: row;
     justify-content: center; }
-    body form .form-row {
+    body #app h1 {
+      font-family: 'Merriweather', sans-serif;
+      font-weight: 300; }
+    body #app input[type="text"] {
+      padding: 10px 0px 25px 5px; }
+    body #app form {
       display: flex;
       flex-flow: column;
+      width: 30vw;
+      min-width: 300px;
+      max-width: 350px;
+      margin: auto;
+      justify-content: center; }
+      body #app form .form-row {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        flex: 1 1 50%;
+        margin: 10px 5px; }
+    body #app .form-horizontal .form-row:nth-of-type(2) {
+      display: flex;
       justify-content: center;
       flex: 1 1 50%;
-      margin: 10px 5px; }
-    body form .btn {
-      width: 40%;
-      height: 35px;
-      border: transparent;
-      background-color: #4da6ff;
-      align-self: flex-end;
-      font-size: 16px;
-      font-family: 'Merriweather', sans-serif;
+      margin: 10px 5px;
+      flex-flow: row; }
+      body #app .form-horizontal .form-row:nth-of-type(2) .btn-signout {
+        background-color: #80c0ff; }
+      body #app .form-horizontal .form-row:nth-of-type(2) button:hover {
+        background-color: white !important;
+        color: #4da6ff;
+        border: 1px solid rgba(51, 51, 51, 0.6); }
+    body #app .alert {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
       color: white; }
-      body form .btn:hover {
-        background-color: #80c0ff;
-        box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.6); }
-  body .alert {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white; }
-    body .alert .close {
-      right: 25px;
-      position: absolute;
-      color: crimson;
-      font-size: 64px;
-      background-color: transparent;
-      border: none; }
-      body .alert .close:hover {
-        cursor: pointer; }
-    body .alert p {
-      font-size: 36px;
-      text-align: center; }
+      body #app .alert .close {
+        right: 25px;
+        position: absolute;
+        color: crimson;
+        font-size: 64px;
+        background-color: transparent;
+        border: none; }
+        body #app .alert .close:hover {
+          cursor: pointer; }
+      body #app .alert p {
+        font-size: 36px;
+        text-align: center; }

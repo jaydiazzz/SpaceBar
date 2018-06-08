@@ -1,5 +1,5 @@
 var app = new Vue({
-  el: '.form',
+  el: 'form',
 
   data: {
     auth: {
@@ -25,7 +25,11 @@ var app = new Vue({
       }.bind(this));
       return (this.auth.user !== null)
     }
-  }
+  },
+
+  firebase: {
+    items: items
+  },
 
 })
 

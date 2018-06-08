@@ -6,13 +6,13 @@ html(lang="en")
       link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
       script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
     body
-      form(method="post")
+      form(method="")
         #locations
           .sideL
             select
-              option(disabled selected value) Dropdown
-              option(value="Kingsburg") Kingsburg
-              option(value="Visalia") Visalia
+              option(disabled selected value style="color:gray") Dropdown
+              option(value="Kingsburg" style="color:black") Kingsburg
+              option(value="Visalia" style="color:black") Visalia
             a(href="#") Apply To All
             a(href="#") New Location
           .middle
@@ -24,16 +24,19 @@ html(lang="en")
           .sideL
             h4 Description:
           .middle
-            input(type="text" placeholder="Description...")
+            input.description-input(type="text" placeholder="Description...")
           .sideR
             #price
               h4 Price
-              input(type="number" placeholder="00.00")
+              input.price-input(type="number" placeholder="00.00")
             #title
               h4 Title
-              input(type="text" placeholder="Burger...")
+              input.title-input(type="text" placeholder="Burger...")
         #submit
-          a(href="#") Create  
+          a.form-submit(href="#") Create 
+      #result
+        h1 Items
+        hr
     script(src='https://www.gstatic.com/firebasejs/5.0.2/firebase.js')
     script.
       // Initialize Firebase
@@ -45,7 +48,42 @@ html(lang="en")
         storageBucket: "testing-90675.appspot.com",
         messagingSenderId: "293983059765"
       };
-      firebase.initializeApp(config);
+      var app = firebase.initializeApp(config);
+      var fb = firebase.database().ref('/items');
+      fb.on('value', function(snapshot){
+          var content = '';
+          var description = '';
+          var pricing = '';
+          snapshot.forEach(function(data){
+            content = data.val().title;
+            description = data.val().description;
+            pricing = data.val().price;
+            //console.log(content);
+            var output = document.createElement("h4");
+            output.innerHTML = '';
+            output.append(`$${pricing} ${content} - ${description}`);
+            document.querySelector("#result").append(output);
+          })		
+      });
+      document.querySelector(".form-submit").onclick = function() {
+          var titleInput = document.querySelector(".title-input").value;
+          var descriptionInput = document.querySelector('.description-input').value;
+          var priceInput = document.querySelector('.price-input').value;
+          var i;
+          fb.on('value', function(snapshot) {
+              snap = snapshot.val();
+              i = Object.keys(snap).length;
+              i++;
+          });
+          console.log(i);
+          fb.child(i).set({
+              title: titleInput,
+              description: descriptionInput,
+              price: priceInput,
+              id: i
+          });
+      }
+      
     script(type='text/javascript', src='/static/js/post.js')
     //script. 
       function preview_image(event){

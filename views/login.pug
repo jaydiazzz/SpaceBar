@@ -35,15 +35,15 @@ html(lang='en')
         form.form-horizontal
           .form-row
             label(for='UserName') Username
-            input(v-model='auth.userName', type='text', placeholder='Username', name='UserName')
+            input(@keydown.enter.prevent = "", v-model='auth.userName', type='text', placeholder='Username', name='UserName')
           .form-row
+            button.btn.btn-signout(@click='signOut', type='button') Signout
             button.btn.btn-default(@click='updateProfile', type='button') Update Profile
         .alert(v-if="auth.message !== ''", role='alert', :class="{'alert-danger': auth.hasErrors, 'alert-success': !auth.hasErrors}")
           button.close(@click='dismissAlert', type='button')
             span(aria-hidden='true') ×
           p
             strong {{auth.message}}
-        button.btn.btn-signout(@click='signOut', type='button') Signout
     script(src='https://www.gstatic.com/firebasejs/5.0.2/firebase.js')
     script.
       // Initialize Firebase
