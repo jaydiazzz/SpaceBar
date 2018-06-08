@@ -43,6 +43,15 @@ a{
   }
 }
 
+@keyframes fadeOut{
+  from{
+    opacity:1;
+  }
+  to{
+    opacity:0;
+  }
+}
+
 #locations,#description,#submit{
   display:flex;
   justify-content:space-evenly;

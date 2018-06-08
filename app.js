@@ -8,7 +8,7 @@ const bodyParser = require( 'body-parser' );
 
 const app = express();
 
-// config 
+// config
 
 // view engine
 app.set( 'views', `${__dirname}/views` ); // look for views in the views folder
